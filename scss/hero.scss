@@ -1,0 +1,62 @@
+.home {
+  margin-top: -92px;
+  .hero {
+    height: 500px;
+    width: 100%;
+    background-image:
+      linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+      url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    .banner {
+      color: white;
+      text-align: center;
+
+      h1 {
+        font: italic normal normal 60px/73px Proxima Nova ScOsf Extra Condensed;
+        padding-top: 172px;
+        padding-bottom: 26px;
+      }
+      p {
+        font: italic normal normal 20px/23px Gill Sans;
+        width: 460px;
+        height: 46px;
+        margin: 0 auto;
+        margin-bottom: 50px;
+      }
+      a {
+        color: white;
+        text-decoration: none;
+        font: normal normal normal 15px/17px Gill Sans;
+        height: 17px;
+      }
+      .btn {
+        height: 40px;
+        background: #79addc 0% 0% no-repeat padding-box;
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
+@font-face {
+  font-family: "Proxima Nova ScOsf Extra Condensed";
+  src: url(../fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url(../fonts/GillSans.ttf);
+}
+
+@media screen and (max-width: 900px) {
+  .home-content,
+  .tours-content {
+    .promos {
+      flex-wrap: wrap;
+      padding: 12px;
+    }
+  }
+}

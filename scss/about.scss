@@ -1,0 +1,114 @@
+.about {
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+  .about-content {
+    max-width: $about-content-max-width;
+    width: 100%;
+
+    h1 {
+      width: 158px;
+      height: 73px;
+      font: normal normal 100 60px/73px Proxima Nova ScOsf Extra Condensed;
+      border-bottom: 2px solid #000000;
+      margin-bottom: 35px;
+    }
+    p {
+      margin-bottom: 101px;
+      height: 96px;
+      text-align: left;
+      font: normal normal normal 16px/19px Gill Sans;
+      letter-spacing: 1.6px;
+    }
+
+    .quotes {
+      h1 {
+        width: 210px;
+        height: 49px;
+        font: normal normal 100 40px/49px Proxima Nova ScOsf Extra Condensed;
+        margin-bottom: 37px;
+      }
+
+      .client-quote {
+        display: flex;
+        min-height: 150px;
+        width: 100%;
+        max-width: 690px;
+
+        .client-image {
+          min-width: 260px;
+          height: 150px;
+          background-size: cover;
+          background-position: center;
+          background-repeat: no-repeat;
+          margin-right: 21px;
+        }
+
+        .client-info {
+          flex: 1;
+          height: 100%;
+          position: relative;
+          margin-bottom: 37px;
+
+          .client-text {
+            p {
+              font: italic normal normal 16px/19px Gill Sans;
+              letter-spacing: 1.6px;
+              margin-bottom: 55px;
+            }
+            .client-name {
+              font: normal normal 100 20px/24px Proxima Nova ScOsf Extra
+                Condensed;
+              letter-spacing: 2px;
+              color: #79addc;
+              position: absolute;
+              right: 0;
+              bottom: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.image-one {
+  background-image: url(../images/about-client-01.jpg);
+}
+
+.image-two {
+  background-image: url(../images/about-client-02.jpg);
+  margin-bottom: 179px;
+}
+
+@media screen and (max-width: 1000px) {
+  .about {
+    margin-top: 50px;
+    .about-content {
+      padding: 30px;
+      .quotes {
+        padding-top: 50px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .quotes {
+    margin-top: 150px;
+    .client-quote {
+      flex-direction: column;
+      align-items: center;
+
+      .client-image {
+        max-width: 260px;
+        margin-bottom: 20px;
+        margin-right: 0px;
+      }
+      .client-info {
+        flex-direction: column;
+        width: 385px;
+      }
+    }
+  }
+}

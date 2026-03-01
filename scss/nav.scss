@@ -1,0 +1,76 @@
+header {
+  display: flex;
+  nav {
+    width: $nav-content-max-width;
+    height: $nav-height;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid white;
+
+    .logo {
+      width: 92px;
+      height: 42px;
+      background-image: url(../images/logo-white.png);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      margin-right: auto;
+    }
+
+    a {
+      text-align: left;
+      text-decoration: none;
+      color: white;
+      font: normal normal normal 15px/17px Gill Sans;
+      border-right: 1px solid #79addc;
+      padding-right: 19.5px;
+      padding-left: 20.5px;
+
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+  }
+}
+
+header.about-page {
+  nav {
+    border-bottom: 2px solid black;
+
+    a {
+      color: black;
+      border-right: 1px solid #79addc;
+
+      &:last-child {
+        border-right: none;
+        padding-right: 0;
+      }
+    }
+
+    .logo {
+      background-image: url(../images/logo-black.png);
+    }
+  }
+}
+
+@font-face {
+  font-family: "Gill Sans";
+  src: url(../fonts/GillSans.ttf);
+}
+
+@media screen and (max-width: 1000px) {
+  header {
+    nav {
+      flex-wrap: wrap;
+      height: auto;
+      padding: 10px;
+      a {
+        padding: 10px;
+      }
+    }
+  }
+}

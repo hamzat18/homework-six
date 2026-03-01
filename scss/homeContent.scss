@@ -1,0 +1,39 @@
+.home-content,
+.tours-content {
+  max-width: $home-content-max-width;
+  margin: -43px auto 0 auto;
+
+  .promos {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 55px;
+    text-align: center;
+    color: white;
+
+    h1 {
+      margin-top: 47px;
+      margin-bottom: -3px;
+      font: normal normal 100 56px/73px Proxima Nova ScOsf Extra Condensed;
+    }
+
+    p {
+      font: normal normal 100 30px/37px Proxima Nova ScOsf Extra Condensed;
+      margin-bottom: 60px;
+    }
+
+    .btn {
+      color: white;
+      text-decoration: none;
+      background: #79addc 0% 0% no-repeat padding-box;
+      border-radius: 20px;
+      font: normal normal normal 15px/17px Gill Sans;
+      padding: 11px 22px;
+    }
+  }
+}
+
+.tours-content {
+  margin: 0 auto;
+  margin-bottom: 100px;
+}

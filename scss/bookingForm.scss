@@ -1,0 +1,144 @@
+.booking-form-holder {
+  margin-top: 50px;
+  padding-bottom: 100px;
+
+  h1 {
+    margin-bottom: 28px;
+    color: black;
+    font: normal normal 100 60px/73px Proxima Nova ScOsf Extra Condensed;
+  }
+
+  .two-col-text-input {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+
+    input {
+      color: black;
+      border: 1px solid #79addc;
+      padding-left: 20px;
+      font: normal normal 300 18px/20px Gill Sans;
+
+      &:first-child {
+        width: 344px;
+      }
+      &:last-child {
+        width: 453px;
+      }
+    }
+  }
+
+  .date-row {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    height: 58px;
+
+    label {
+      color: black;
+      font: normal normal 300 18px/20px Gill Sans;
+      margin-top: 20px;
+    }
+    input {
+      width: 698px;
+      color: black;
+      border: 1px solid #79addc;
+      padding-left: 20px;
+      font: normal normal 300 18px/20px Gill Sans;
+      background-image: url(../images/calendar.svg);
+      background-repeat: no-repeat;
+      background-size: 19px;
+      background-position: right;
+      background-position: right 20px center;
+    }
+  }
+
+  .select-row {
+    display: flex;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    .select-group {
+      color: black;
+      label {
+        font: normal normal 300 18px/20px Gill Sans;
+        margin-right: 76px;
+      }
+      input {
+        width: 103px;
+        height: 58px;
+        border: 1px solid #79addc;
+        font: normal normal 300 18px/20px Gill Sans;
+        padding-left: 20px;
+        background-image: url(../images/down-arrow.svg);
+        background-repeat: no-repeat;
+        background-size: 20px;
+        background-position: right;
+        background-position: right 15px center;
+      }
+    }
+  }
+
+  textarea {
+    width: 100%;
+    height: 192px;
+    padding: 20px;
+    color: black;
+    font: normal normal 300 18px/20px Gill Sans;
+    border: 1px solid #79addc;
+    margin-bottom: 37px;
+  }
+
+  .submit-btn {
+    width: 100%;
+    height: 61px;
+    background: #79addc 0% 0% no-repeat padding-box;
+    border-radius: 30px;
+    font: normal normal normal 15px/17px Gill Sans;
+    border-color: #79addc;
+    color: white;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  .booking-form-holder {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .two-col-text-input {
+    flex-direction: column;
+    height: auto;
+    input {
+      width: 100% !important;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      &:last-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
+  .date-row {
+    flex-direction: column;
+    height: auto;
+    label {
+      margin-bottom: 8px;
+      margin-top: 0;
+    }
+    input {
+      width: 100% !important;
+      box-sizing: border-box;
+      margin-bottom: 20px;
+    }
+  }
+  .select-row {
+    flex-direction: row;
+
+    .select-group {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      input {
+        width: 100%;
+      }
+    }
+  }
+}
