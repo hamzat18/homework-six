@@ -16,7 +16,7 @@ https://in-info-web4.luddy.indianapolis.iu.edu/~taih/n215/homework-six/tours.htm
    npm install sass --save-dev
    ```
 
-3. **Add Scripts**
+3. **Add Scripts in package.json**
    - Live Server:
 
    ```bash
